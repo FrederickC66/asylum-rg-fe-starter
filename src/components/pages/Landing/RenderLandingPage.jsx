@@ -1,8 +1,8 @@
 import React from 'react';
 // ADD IMPORTS BACK FOR GRAPHS SECTION
-// import GrantRatesByOfficeImg from '../../../styles/Images/bar-graph-no-text.png';
-// import GrantRatesByNationalityImg from '../../../styles/Images/pie-chart-no-text.png';
-// import GrantRatesOverTimeImg from '../../../styles/Images/line-graph-no-text.png';
+import GrantRatesByOfficeImg from '../../../styles/Images/bar-graph-no-text.png';
+import GrantRatesByNationalityImg from '../../../styles/Images/pie-chart-no-text.png';
+import GrantRatesOverTimeImg from '../../../styles/Images/line-graph-no-text.png';
 import HrfPhoto from '../../../styles/Images/paper-stack.jpg';
 import '../../../styles/RenderLandingPage.less';
 import { Button } from 'antd';
@@ -32,7 +32,21 @@ function RenderLandingPage(props) {
       </div>
 
       {/* Graphs Section: Add code here for the graphs section for your first ticket */}
-      {/* <div className="graphs-section"> */}
+      <div className="graphs-section">
+        <div className="graphs-section-box-1">
+          <img src={GrantRatesByOfficeImg} alt="todo" />
+          <h3>Search Grant Rates By Office</h3>
+        </div>
+        <div className="graphs-section-box-2">
+          <img src={GrantRatesByNationalityImg} alt="todo" />
+          <h3>Search Grant Rates By Nationality</h3>
+        </div>
+        <div className="graphs-section-box-3">
+          <img src={GrantRatesOverTimeImg} alt="todo" />
+          <h3>Search Grant Rates Over Time</h3>
+        </div>
+      </div>
+
       <div className="view-more-data-btn-container">
         <Button
           type="default"
@@ -41,6 +55,14 @@ function RenderLandingPage(props) {
         >
           View the Data
         </Button>
+        <a href="https://humanrightsfirst.org/wp-content/uploads/2022/10/COW2021001887-I589Data.csv">
+          <Button
+            type="default"
+            style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}
+          >
+            Download the Data
+          </Button>
+        </a>
       </div>
 
       <div className="middle-section">
@@ -59,12 +81,54 @@ function RenderLandingPage(props) {
           </h3>
         </div>
       </div>
+
       <div>
         {/* Bottom Section: Add code here for the graphs section for your first ticket */}
-        {/* <div className="bottom-section">*/}
-        <p onClick={() => scrollToTop()} className="back-to-top">
-          Back To Top ^
-        </p>
+        <div className="bottom-section">
+          <div className="bottom-section-big-text-box">
+            <h1>Systemic Disparity Insights</h1>
+          </div>
+          <div className="bottom-section-boxes">
+            <div className="bottom-section-text-box 1">
+              <h2>36%</h2>
+              <p>
+                By the end of the Trump administration, the average asylum
+                office grant rate had fallen 36 percent from an average of 44
+                percent in fiscal year 2016 to 28 percent in fiscal year 2020.
+              </p>
+            </div>
+            <div className="bottom-section-text-box 2">
+              <h2>5%</h2>
+              <p>
+                The New York asylum office grant rate dropped to 5 percent in
+                fiscal year 2020.
+              </p>
+            </div>
+            <div className="bottom-section-text-box 2">
+              <h2>6x Lower</h2>
+              <p>
+                Between fiscal year 2017 and 2020, the New York asylum office's
+                average grant rate was six times lower than the San Francisco
+                asylum office.
+              </p>
+            </div>
+          </div>
+
+          <div className="read-more-btn-container">
+            <a href="https://humanrightsfirst.org/library/uscis-records-reveal-systemic-disparities-in-asylum-decisions/">
+              <Button
+                type="default"
+                style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}
+              >
+                Read More
+              </Button>
+            </a>
+          </div>
+
+          <p onClick={() => scrollToTop()} className="back-to-top">
+            Back To Top ^
+          </p>
+        </div>
       </div>
     </div>
   );
