@@ -55,14 +55,16 @@ function RenderLandingPage(props) {
         >
           View the Data
         </Button>
-        <a href="https://humanrightsfirst.org/wp-content/uploads/2022/10/COW2021001887-I589Data.csv">
-          <Button
-            type="default"
-            style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}
-          >
-            Download the Data
-          </Button>
-        </a>
+        <div>
+          <a href="https://humanrightsfirst.org/wp-content/uploads/2022/10/COW2021001887-I589Data.csv">
+            <Button
+              type="default"
+              style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}
+            >
+              Download the Data
+            </Button>
+          </a>
+        </div>
       </div>
 
       <div className="middle-section">
