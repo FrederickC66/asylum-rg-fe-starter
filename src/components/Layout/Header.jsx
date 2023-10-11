@@ -32,8 +32,8 @@ function HeaderContent() {
         </Link>
         <AuthenticationProfile />
       </div>
-      <div>
-        <AuthenticationButton />
+      <div className="login-logoff-button">
+        <AuthenticationButton style={{ color: '#E2F0F7' }} />
       </div>
     </div>
   );
